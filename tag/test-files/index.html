@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html data-html-server-rendered="true" lang="en" data-vue-tag="lang">
+  <head>
+    <title data-vue-tag="true">Hello, world! - Blog of Mr. CaT</title><meta data-vue-tag="true" charset="utf-8"/><meta data-vue-tag="true" name="generator" content="Gridsome v0.5.4"/><meta data-vue-tag="true" data-key="viewport" name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/><meta data-vue-tag="true" data-key="description" name="description" content="Hey! Welcome, feel yourself as at home. That&#x27;s about me - Web Developer. Language nerd. Open Source activist."/><meta data-vue-tag="true" data-key="format-detection" name="format-detection" content="telephone=no"/><noscript data-vue-tag="true" ><style>.g-image--loading{display:none;}</style></noscript><link rel="preload" href="/blog/assets/css/styles.0c888f26.css" as="style"><link rel="preload" href="/blog/assets/js/app.fc5ec2f3.js" as="script"><link rel="preload" href="/blog/assets/css/4.styles.09c5e7ae.css" as="style"><link rel="preload" href="/blog/assets/js/component--tag.692b75ce.js" as="script"><link rel="prefetch" href="/blog/assets/js/component--404.558977e0.js"><link rel="prefetch" href="/blog/assets/js/component--home.c9d8a97c.js"><link rel="prefetch" href="/blog/assets/js/component--post.fa15d9eb.js"><link rel="prefetch" href="/blog/assets/js/page-query.be93e38e.js"><link rel="stylesheet" href="/blog/assets/css/styles.0c888f26.css"><link rel="stylesheet" href="/blog/assets/css/4.styles.09c5e7ae.css">
+  </head>
+  <body data-vue-tag="">
+    <script>
+      // Add dark / light detection that runs before Vue.js load. Borrowed from overreacted.io
+      (function() {
+        window.__onThemeChange = function() {};
+        function setTheme(newTheme) {
+          window.__theme = newTheme;
+          preferredTheme = newTheme;
+          document.body.setAttribute('data-theme', newTheme);
+          window.__onThemeChange(newTheme);
+        }
+
+        var preferredTheme;
+        try {
+          preferredTheme = localStorage.getItem('theme');
+        } catch (err) { }
+
+        window.__setPreferredTheme = function(newTheme) {
+          setTheme(newTheme);
+          try {
+            localStorage.setItem('theme', newTheme);
+          } catch (err) {}
+        }
+
+        var darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
+        darkQuery.addListener(function(e) {
+          window.__setPreferredTheme(e.matches ? 'dark' : 'light')
+        });
+
+        setTheme(preferredTheme || (darkQuery.matches ? 'dark' : 'light'));
+      })();
+    </script>
+
+    <div id="app" data-server-rendered="true"><header class="header"><div class="header__left"><a href="/blog/" class="logo active"><span class="logo__text">
+    ← Blog of Mr. CaT
+  </span></a></div><div class="header__right"><button role="button" aria-label="Toggle dark/light" class="toggle-theme"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></button></div></header><main class="main"><h1 class="tag-title text-center space-bottom">
+    # Test files
+  </h1><div class="posts"><div class="post-card content-box"><div class="post-card__header"><!----></div><div class="post-card__content"><h2 class="post-card__title">Markdown test file</h2><p class="post-card__description">Markdown is intended to be as easy-to-read and easy-to-write as is feasible. Readability, however, is emphasized above all else. A Markdown-formatted document should be publishable as-is, as plain text, without looking like it's been marked up with tags or formatting instructions.</p><div class="post-meta post-card__meta">
+   Posted 6. February 2019.
+   <strong>6 min read.</strong></div><div class="post-tags post-card__tags"></div><a href="/blog/markdown-test-file" class="post-card__link">Link</a></div></div></div></main><footer class="footer"><span class="footer__copyright">Copyright © 2019</span><span class="footer__links">by <a href="//mrcat323.github.io"> Mr. CaT </a></span></footer></div>
+    <script src="/blog/assets/js/app.fc5ec2f3.js" defer></script><script src="/blog/assets/js/component--tag.692b75ce.js" defer></script>
+  </body>
+</html>
